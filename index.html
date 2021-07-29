@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 onmouseenter="noti('Click to copy!')" onmouseleave="noti('Hover over title!')" onclick="copyField()" id="title">Hello World!</h1>
+        <h1 onmouseenter="noti('Click to copy!')" onmouseleave="noti('Hover over title!')" onclick="copyField();noti('Copied title!')" id="title">Hello World!</h1>
         <h7 id="notification">Hover over title!</h7>
         <input id="input" placeholder="Type here..." oninput="updateTitle()" type="text">
     </div>
