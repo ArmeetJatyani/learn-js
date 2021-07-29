@@ -3,12 +3,18 @@ console.log("index.js started");
 
 inputField = document.getElementById("input");
 title = document.getElementById("title");
-
+notification = document.getElementById("notification");
 inputField.focus();
 
 function updateTitle() {
-    title.innerHTML = inputField.value;
-    inputField.style.width = inputField.value.length + 4 + "ch";
+    inputValue = inputField.value;
+    
+    if (inputField.value.length > 25) {
+        inputValue = inputValue.slice(0, 25) + "...";
+    }
+    title.innerHTML = inputValue;
+    document.title = inputValue;
+    inputField.style.width = inputValue.length + 4 + "ch";
 }
 
 function copyField() {
@@ -19,4 +25,12 @@ function copyField() {
         alert("Copied the text: " + inputField.value);
     }
     
+}
+
+function noti(msg) {
+    notification.innerHTML = msg
+    notification.style.transform = "scale(1.2)";
+    setTimeout(function () {
+        notification.style.transform = "scale(1)";
+    }, 100)
 }
