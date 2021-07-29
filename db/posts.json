@@ -1,0 +1,22 @@
+{
+    posts: [
+        {
+            "author": "Armeet",
+            "username": "@ArmeetJatyani",
+            "text": "Today I found a pot of gold! 🤑🤑🤑",
+            "postedAt": 1627548963863
+        },
+        {
+            "author": "Arshmeet",
+            "username": "@ArshmeetKaur",
+            "text": "I don't know how to use this.",
+            "postedAt": 1627548978823
+        },
+        {
+            "author": "Trump",
+            "username": "@realDonaldTrump",
+            "text": "Build the wall! 💪",
+            "postedAt": 1627549028432
+        }
+    ]
+}
